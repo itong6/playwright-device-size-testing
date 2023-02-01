@@ -127,3 +127,45 @@
     filter: invert(1);
   }
 }
+
+/* Tablet */
+@media (max-width: 820px) {
+  .container {
+    background-color: rgb(0,0,255);
+  }
+}
+
+/* Mobile */
+@media (max-width: 414px) {
+  .container {
+    background-color: red;
+  }
+
+  .content {
+    padding: 4rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .card {
+    padding: 1rem 2.5rem;
+  }
+
+  .card h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .center {
+    padding: 8rem 0 6rem;
+  }
+
+  .center::before {
+    transform: none;
+  }
+}
+
